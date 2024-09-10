@@ -1,4 +1,5 @@
 import pandas as pd
+# when I went back into vs code, I had to reactivate the venv, but I also had to run pip install pandas to get pandas working again. The pip install -r requirements worked the first time, but not when I had to reactivate it. 
 
 # Reads the file in from data csv file
 df_wine_reviews = pd.read_csv("data/winemag-data-130k-v2.csv.zip")
