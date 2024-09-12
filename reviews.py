@@ -13,11 +13,10 @@ summary_df['points'] = summary_df['points'].round(1)
 # Test failed. Now sorting by the count column in descending order to match the example
 summary_df = summary_df.sort_values(by='count', ascending=False)
 
-#print(summary_df)
+print(summary_df)
 
 # this writes the summary to the csv folder using .to_csv. Use data/ to have it saved under the dat folder. index=False can be used to exclude the index column when saving to the csv file. 
-summary_df.to_csv('data/reviews_per_country.csv', index=False)
-
+summary_df.to_csv('data/reviews-per-country.csv', index=False)
 
 
 
