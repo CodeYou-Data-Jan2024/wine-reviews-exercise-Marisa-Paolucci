@@ -10,6 +10,9 @@ summary_df = df_wine_reviews.groupby('country').agg(count=('country', 'size'), p
 # Round(1) is used to round the average points to one decimal place.
 summary_df['points'] = summary_df['points'].round(1)
 
+# Test failed. Now sorting by the count column in descending order to match the example
+summary_df = summary_df.sort_values(by='count', ascending=False)
+
 #print(summary_df)
 
 # this writes the summary to the csv folder using .to_csv. Use data/ to have it saved under the dat folder. index=False can be used to exclude the index column when saving to the csv file. 
